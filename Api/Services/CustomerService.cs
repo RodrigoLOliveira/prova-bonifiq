@@ -7,7 +7,7 @@ namespace ProvaPub.Services
 {
     public class CustomerService : BaseService<Customer>, ICustomerService
     {
-        public CustomerService(TestDbContext ctx) : base(ctx) { }        
+        public CustomerService(TestDbContext ctx) : base(ctx) { }
 
         public async Task<bool> CanPurchase(int customerId, decimal purchaseValue)
         {

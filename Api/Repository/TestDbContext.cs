@@ -21,7 +21,7 @@ namespace ProvaPub.Repository
 			modelBuilder.Entity<Product>().HasData(getProductSeed());
 		}
 
-		private Customer[] getCustomerSeed()
+		public Customer[] getCustomerSeed()
 		{
 			List<Customer> result = new();
 			for (int i = 0; i < 20; i++)
@@ -34,7 +34,7 @@ namespace ProvaPub.Repository
 			}
 			return result.ToArray();
 		}
-		private Product[] getProductSeed()
+		public Product[] getProductSeed()
 		{
 			List<Product> result = new();
 			for (int i = 0; i < 20; i++)
